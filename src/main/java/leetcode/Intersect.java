@@ -17,21 +17,22 @@ public class Intersect {
             int a = 0;
             int b = 0;
             List<Integer> list = new ArrayList();
-            while(a < nums1.length && b < nums2.length){
-                if(nums1[a] < nums2[b]){
+            while (a < nums1.length && b < nums2.length) {
+                if (nums1[a] < nums2[b]) {
                     a++;
-                }else if(nums1[a] > nums2[b]){
+                } else if (nums1[a] > nums2[b]) {
                     b++;
-                }else{
+                } else {
                     list.add(nums1[a]);
                     a++;
                     b++;
                 }
             }
             int[] res = new int[list.size()];
-            for(int i = 0; i < res.length; i++){
+            for (int i = 0; i < res.length; i++) {
                 res[i] = list.get(i);
             }
+
             return res;
         }
     }
