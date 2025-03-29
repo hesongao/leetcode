@@ -47,6 +47,7 @@ public class LengthOfLIS_300 {
             dp[i] += 1;
             max = Math.max(dp[i], max);
         }
+        Integer.valueOf(10);
 
         return max;
 
